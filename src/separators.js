@@ -40,15 +40,17 @@ function addComma1(numbers1) {
 }
 
 function outPut(put1,num) {
-    var out = '';
-    for (var i = put1.length - 1; i >= 0; i--) {
-        out += put1[i];
+    var out='';
+    for(var i=put1.length-1;i>=0;i--){
+        out+=put1[i];
     }
     var nums = num.toString().split('.');
 
-    if (nums.length != 1) {
-        out += "." + parseInt(nums[1]);
+    if(nums.length!=1) {
+        out+="."+parseInt(nums[1]);
     }
 
     return out;
 }
+
+module.exports=thousands_separators;
